@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Emanuel Levatić</title>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="">
+        <ul id="sideMenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-angle-right" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars"  onclick="openMenu()"></i>
+        
+      </nav>
+      <div class="header-intro">
+        <p>Student at Foi</p>
+        <h1>Hey! I'm <br> <span> Emanuel </span>Levatić <br> From Croatia</h1>
+        <a href="CV_Emanuel_Levatić.pdf" download class="btn">Download CV</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------start about-------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <img src="images/me.jpg" alt="me">
+        </div>
+
+        <div class="col-2">
+          <div class="about-inner">
+            <h1 class="subtitle">About Me</h1>
+
+            <div class="tab-titles">
+              <p class="tab-links activeLink" onclick="opentab('aboutMe')">About</p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents activeContent" id="aboutMe">
+              <ul>
+                <li><span>Name:</span> <br> Emanuel Levatić</li>
+                <li><span>Date:</span> <br> 10. January 2002.</li>
+                <li><span>Country:</span> <br> Croatia, Varaždin</li>
+                <li><span>E-mail:</span> <br> elevatic20@gmail.com</li>
+              </ul>
+              <a href="CV_Emanuel_Levatić.pdf" download class="btn">Download CV</a>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>Known software:</span> <br> MS Office programs <br> Visual studio,
+                  Visual Studio Code, DBeaver, Microsoft Azure, GitHub <br>
+                  Sony Vegas, DaVinci REsolve, Photoshop CC, Figma <br>
+                  Unity, 3D Builder
+                </li>
+                <li><span>Programming Languages:</span> <br> HTML, CSS, JavaScript <br>
+                  C#, C++
+                </li>
+              </ul>
+              <a href="CV_Emanuel_Levatić.pdf" download class="btn">Download CV</a>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020 - 2023 (in progress): Faculty of Organisation and Informatics</span> <br>
+                  <b>Information and business systems </b> - Creation of program support and operation
+                  of modern information systems, knowledge of network infrastructure and the ability to administer
+                  networks, design of databases with the ability to administer them, programming
+                  in one of the programming languages, programming of network applications <br>
+
+                  <b>Networked systems and computer games (Module)</b> - The field of networked systems includes
+                  four components: cyber-physical systems, the Internet of Things, the Internet of Services and
+                  smart factories. Computer games are also an important direction in the development of informatics,
+                  which connects numerous disciplines such as design, creativity, multimedia and programming.
+                </li>
+                <li><span>2016 - 2020: Obrtnička škola Koprivnica</span> <br>
+                  <b>Computer technician</b> - Planning and maintenance of local networks, databases, application of IT
+                  technology,
+                  operating systems, creation of websites, programming, creation of multimedia content
+                </li>
+              </ul>
+              <a href="CV_Emanuel_Levatić.pdf" download class="btn">Download CV</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- --------- start portfolio ------------------  -->
+
+  <div id="projects">
+    <div class="container">
+      <h1 class="subtitle-portfolio">My Projects</h1>
+      <div class="my-project-list">
+        <div class="project">
+          <img src="images/work1.jpg" alt="">
+          <div class="layer">
+            <h3>IoT Smart Bulb Development</h3>
+            <p>The project in cooperation with the company Leapwise was to 
+              create a smart lighting fixture.</p>
+              <a href="#"><i class="fa-brands fa-github fa-beat"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/work2.jpg" alt="">
+          <div class="layer">
+            <h3>3D Game Development</h3>
+            <p>As my final thesis at the university, my topic is the creation of a 3D platformer game.</p>
+              <a href="#"><i class="fa-brands fa-github fa-beat"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="images/work3.jpg" alt="">
+          <div class="layer">
+            <h3>Online glasses store (in progress...)</h3>
+            <p>Currently I'm creating online store, the project I am working on is also in one course at the university.</p>
+              <a href="#" ><i class="fa-brands fa-github fa-beat"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- -------------- contact -------------- -->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row contact">
+        <div class="contact-left">
+          <h1 class="subtitle-contact">Contact Me</h1>
+          <p> <i class="fa-solid fa-envelope"></i> elevatic20@gmail.com</p>
+          <p> <i class="fa-solid fa-phone"></i> 0958762483</p>
+          <div class="social-icon">
+            <a href="https://www.instagram.com/leva.tic/"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/elevatic20/"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/elevatic20?tab=repositories"><i class="fab fa-github"></i></a>
+          </div>
+          <a href="CV_Emanuel_Levatić.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © ELevatic.</p>
+    </div>
+  </div>
+
+  <script>
+    var links = document.getElementsByClassName("tab-links");
+    var contents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabName) {
+      for (link of links) {
+        link.classList.remove("activeLink");
+        console.log("maknuo sam");
+      }
+      for (content of contents) {
+        content.classList.remove("activeContent");
+        console.log("maknuo sam kontent");
+      }
+
+      event.currentTarget.classList.add("activeLink");
+      console.log("dodao sam crtu");
+      document.getElementById(tabName).classList.add("activeContent");
+      console.log("dodao sam kontent");
+
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sideMenu");
+
+    function openMenu(){
+      sidemenu.style.right = "0";
+    }
+
+    function closeMenu(){
+      sidemenu.style.right = "-200px"
+    }
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx60x5KT2R4bLRbGDBcalT-klXW6NNU7BVxVLxVwSHryA9dczHainG3hWx7F2IUlVo/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully!"
+        setTimeout(function(){
+          msg.innerHTML ="";
+        }, 3000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+</body>
+
+</html>
