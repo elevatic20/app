@@ -3,7 +3,7 @@ name: Deploy ASP.NET CORE
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   AZURE_WEBAPP_NAME: elevatic
@@ -14,7 +14,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@master
 
       - name: Login via Azure CLI
         uses: azure/login@v1
