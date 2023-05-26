@@ -27,7 +27,7 @@ jobs:
           dotnet-version: ${{ env.AZURE_VERSION }}
 
       - name: Deploy to App Service
-        uses: azure/webapps-deploy@v2
+        uses: azure/webapps-deploy@v1
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           package: "${{ env.AZURE_WEBAPP_PATH }}/myapp"
